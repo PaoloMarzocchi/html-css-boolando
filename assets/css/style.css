@@ -138,4 +138,9 @@ nav.container {
 }
 .card:hover .display-none.max-width{
     display:inline-block;
+    cursor: pointer;
+}
+.heart:hover{
+    color: red;
+    cursor: pointer;
 }
