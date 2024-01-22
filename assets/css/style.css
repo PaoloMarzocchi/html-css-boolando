@@ -20,13 +20,14 @@ body {
 .site-header {
     background-color: var(--bool-primary);
     position: fixed;
+    z-index: 1;
     width: 100%;
     box-shadow: 1px;
 }
 
 
 .container {
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 
@@ -36,19 +37,26 @@ body {
 
 ul {
     list-style: none;
-    color: white;
-    gap: 0.4rem;
+}
+.site-main{
+    padding-top: 6rem;
 }
 
+
+/* #endregion Common */
+/* #region Utilities */
 .grow {
     flex-grow: 1;
 }
-
-/* #endregion Common */
+.max-width{
+    max-width: 100%;
+}
 
 /* #region Header */
 nav>ul {
     font-size: small;
+    color: white;
+    gap: 0.4rem;
 }
 
 .logo-container {
@@ -71,3 +79,47 @@ nav.container {
     gap: 0.4rem;
 }
 /* #endregion Header */
+
+/* #region Main */
+.site-main > .container{
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+.card{
+    width: 300px;
+    height: 500px;
+}
+.card-top{
+    position: relative;
+}
+.discount{
+    position:absolute;
+    background-color: var(--bool-discount-perc);
+    bottom: 2rem;
+    padding: 0.2rem 0.5rem;
+    color: white;
+}
+.eco{
+    position:absolute;
+    background-color: var(--bool-eco);
+    bottom: 2rem;
+    left: 3.5rem;
+    padding: 0.2rem 0.5rem;
+    color: white;
+}
+.heart{
+    position:absolute;
+    top: 0.5rem;
+    right: 0;
+    padding: 0.4rem 0.6rem;
+    background-color: white;
+}
+
+.discount-price{
+    color: var(--bool-discount-price);
+    font-weight: bold;
+}
+
+.original-price{
+    text-decoration: line-through;
+}
