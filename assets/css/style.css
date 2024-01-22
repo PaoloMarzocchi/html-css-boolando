@@ -22,7 +22,7 @@ body {
     position: fixed;
     z-index: 1;
     width: 100%;
-    box-shadow: 1px;
+    box-shadow: 0 1px grey;
 }
 
 
@@ -40,6 +40,11 @@ ul {
 }
 .site-main{
     padding-top: 6rem;
+}
+.site-footer{
+    background-color: var(--bool-footer);
+    color: white;
+    padding: 2rem;
 }
 /* #endregion Common */
 
@@ -143,4 +148,21 @@ nav.container {
 .heart:hover{
     color: red;
     cursor: pointer;
+}
+
+.site-footer > .container{
+    justify-content: space-between;
+}
+
+.business > h4{
+    font-size: 1rem;
+}
+
+.business-info{
+    font-size: 0.5rem;
+    gap: 0.4rem;
+}
+
+.social-icons{
+    gap: 0.4rem;
 }
