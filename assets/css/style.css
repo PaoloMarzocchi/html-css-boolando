@@ -41,9 +41,8 @@ ul {
 .site-main{
     padding-top: 6rem;
 }
-
-
 /* #endregion Common */
+
 /* #region Utilities */
 .grow {
     flex-grow: 1;
@@ -51,6 +50,10 @@ ul {
 .max-width{
     max-width: 100%;
 }
+.display-none{
+    display: none;
+}
+/* #endregion Utilities */
 
 /* #region Header */
 nav>ul {
@@ -82,12 +85,14 @@ nav.container {
 
 /* #region Main */
 .site-main > .container{
-    gap: 0.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
+
 }
 .card{
     width: 300px;
     height: 500px;
+    margin-bottom: 2rem;
 }
 .card-top{
     position: relative;
@@ -122,4 +127,15 @@ nav.container {
 
 .original-price{
     text-decoration: line-through;
+}
+
+.eco.position-left{
+    left: 0;
+}
+
+.card:hover .max-width{
+    display:none;
+}
+.card:hover .display-none.max-width{
+    display:inline-block;
 }
